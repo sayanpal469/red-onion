@@ -29,6 +29,12 @@ export const theme = createTheme({
             defaultProps: {
                 variant: 'contained'
             }
-        }
+        },
+
+        // MuiUseMediaQuery: {
+        //     defaultProps: {
+        //         noSsr: true
+        //     }
+        // }
     }
 })

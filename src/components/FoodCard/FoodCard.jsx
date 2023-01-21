@@ -3,16 +3,16 @@ import Box from '@mui/material/Box';
 import { Typography, Grid } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
-const FoodCard = ({ meal }) => {
+const FoodCard = ({ meal, value }) => {
    // const navigate = useNavigate();
    return (
-      <Grid
-      item
-      xl={4}
-      lg={4}
-      md={6}
-      sm={12}
-      xs={12}
+      <Box
+      // item
+      // xl={4}
+      // lg={4}
+      // md={6}
+      // sm={12}
+      // xs={12}
          sx={{
             width: '100%',
             // background: 'red',
@@ -65,14 +65,14 @@ const FoodCard = ({ meal }) => {
             <Typography
                sx={{
                   textAlign: 'center',
-                  mt: 2,
+                  mt: 1,
                }}
                variant='h5'
             >
                ${meal.price}
             </Typography>
          </Box>
-      </Grid>
+      </Box>
    );
 };
 
