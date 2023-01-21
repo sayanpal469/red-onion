@@ -1,4 +1,4 @@
-import { Box, Container, Grid, Skeleton } from '@mui/material';
+import { Box, Button, Container, Grid, Skeleton } from '@mui/material';
 import React, { useState } from 'react';
 import useFoods from '../../hooks/useFoods';
 import TabButtons from '../Custom/TabButtons';
@@ -50,6 +50,16 @@ const FoodCategory = () => {
                      </Box>
                   ))}
                 </Grid>
+                <Box mt={3} display="flex" justifyContent="center" alignItems="center">
+                <Button
+                
+                sx={{
+                    borderRadius: '4px'
+                }}
+             >
+                Checkout Your Food
+             </Button>
+                </Box>
             </Container>           
         </Box>
     );
